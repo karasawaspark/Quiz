@@ -20,8 +20,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var countAllQuizzes = countQuizzes.quizzess.count
-        
+        let countAllQuizzes = countQuizzes.quizzess.count
         // Do any additional setup after loading the view.
         
         self.label.text = "\(self.nameText)さん　あなたのスコアは\(self.score)です。"

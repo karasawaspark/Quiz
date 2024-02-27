@@ -82,16 +82,12 @@ class QuizViewController: UIViewController {
             self.quizCard.style = .initial
             //クイズを表示
             self.loadQuiz()
-            
         case .done:
             //カードを非表示にして結果画面へ遷移
             self.quizCard.isHidden = true
             self.performSegue(withIdentifier: "goToResult", sender: nil)
-            
         }
     }
-    
-    
     
     @objc func dragQuizCard(_ sender: UIPanGestureRecognizer){
         switch sender.state {
@@ -131,5 +127,4 @@ class QuizViewController: UIViewController {
             resultViewController.score = self.manager.score
         }
     }
-    
 }
